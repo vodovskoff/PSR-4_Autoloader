@@ -1,8 +1,7 @@
 <?php
 
 spl_autoload_register(function ($className) {
-    $path = dirname(__DIR__) . "/src/" . str_replace("\\", "/", $className) . ".php";
-    include_once $path;
+    include_once dirname(__DIR__) . "/src/" . str_replace("\\", "/", $className) . ".php";
 });
 
 $cOne = new ClassOne();
